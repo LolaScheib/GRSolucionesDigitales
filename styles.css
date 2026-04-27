@@ -1391,3 +1391,119 @@ footer {
     font-size: 0.75rem;
 }
 }
+
+/* FIX IPHONE 14 PRO Y CELULARES */
+@media (max-width: 430px) {
+    .navbar {
+        padding: 0.25rem 0;
+    }
+
+    .navbar .container {
+        min-height: 68px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+        gap: 0;
+    }
+
+    .brand-text {
+        display: none !important;
+    }
+
+    .navbar-brand img,
+    .navbar.scrolled .navbar-brand img {
+        height: 48px;
+        transform: scale(1.35);
+        transform-origin: left center;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+        padding: 0.25rem 0.4rem;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 6.8rem 0 2.5rem;
+        text-align: center;
+    }
+
+    .hero .container {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.12;
+        margin-bottom: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.98rem;
+        line-height: 1.55;
+        max-width: 330px;
+        margin: 0 auto 1.8rem;
+    }
+
+    .hero .d-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.9rem !important;
+    }
+
+    .hero .btn-primary,
+    .hero .btn-outline {
+        width: 100%;
+        max-width: 300px;
+        padding: 0.9rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .hero-logo-wrap {
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        overflow: hidden;
+    }
+
+    .hero-logo {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        max-height: none;
+        transform: none;
+    }
+
+    .hero-logo:hover {
+        transform: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-brand img {
+        height: 48px;
+        transform: scale(1.15);
+        transform-origin: center;
+    }
+
+    .footer-copy-wrapper {
+        text-align: center;
+    }
+
+    .footer-copy {
+        font-size: 0.82rem;
+    }
+
+    .footer-meta {
+        font-size: 0.74rem;
+    }
+}
