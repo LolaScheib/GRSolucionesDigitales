@@ -961,8 +961,8 @@ section {
 }
 
 .caso-antes .caso-label {
-    color: var(--text-muted);
-    background: #f0f0f0;
+   background: #fee2e2; /* rojo suave de fondo */
+    color: #dc2626;     /* rojo fuerte para el signo */
 }
 
 .caso-despues .caso-label {
