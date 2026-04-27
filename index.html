@@ -17,47 +17,50 @@
 
     <!-- CSS propio -->
     <link rel="stylesheet" href="./styles.css">
+<base target="_blank">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#inicio" aria-label="GR Soluciones Digitales">
-                <img src="./assets/logo.png" alt="Logo GR Soluciones Digitales">
-            </a>
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#inicio" aria-label="GR Soluciones Digitales">
+            <img src="./assets/logo.png" alt="Logo GR Soluciones Digitales">
+            <span class="brand-text">GR Soluciones Digitales</span>
+        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir navegación">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir navegación">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#nosotros">Nosotros</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Servicios
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#servicios">Ver todos</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#branding">Branding</a></li>
-                            <li><a class="dropdown-item" href="#automatizacion">Automatización</a></li>
-                            <li><a class="dropdown-item" href="#redes">Redes Sociales</a></li>
-                            <li><a class="dropdown-item" href="#consultoria">Consultoría</a></li>
-                            <li><a class="dropdown-item" href="#seo">SEO & Mercado</a></li>
-                            <li><a class="dropdown-item" href="#presentaciones">Presentaciones</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+    <a class="nav-link" href="#filosofia">Método</a>
+</li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Servicios
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#servicios">Ver todos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#branding">Branding</a></li>
+                        <li><a class="dropdown-item" href="#automatizacion">Automatización</a></li>
+                        <li><a class="dropdown-item" href="#redes">Redes Sociales</a></li>
+                        <li><a class="dropdown-item" href="#consultoria">Consultoría</a></li>
+                        <li><a class="dropdown-item" href="#seo">SEO & Mercado</a></li>
+                        <li><a class="dropdown-item" href="#presentaciones">Presentaciones</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Hero -->
     <section class="hero" id="inicio">
@@ -65,31 +68,15 @@
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
                     <div class="hero-content" data-aos="fade-up">
-                        <span class="hero-eyebrow">Consultoría Estratégica</span>
-                        <h1>Transformación digital para empresas que <span>piensan en grande</span></h1>
+                        <span class="hero-eyebrow">Impulsá tu negocio con inteligencia digital</span>
+                        <h1> No hacemos marketing, construimos sistemas<span> que venden.</span></h1>
                         <p class="hero-description">
-                            Acompañamos a emprendimientos y empresas en su evolución digital.
-                            Estrategia, automatización e inteligencia artificial aplicada a resultados concretos.
+                            Diseñamos sistemas de crecimiento digital para negocios que quieren dejar de improvisar y empezar a escalar con estructura.
                         </p>
 
                         <div class="d-flex gap-3 flex-wrap">
-                            <a href="#contacto" class="btn btn-primary">Iniciar consultoría</a>
-                            <a href="#servicios" class="btn btn-outline">Explorar servicios</a>
-                        </div>
-
-                        <div class="hero-stats">
-                            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
-                                <h3>100+</h3>
-                                <p>Proyectos ejecutados</p>
-                            </div>
-                            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
-                                <h3>15+</h3>
-                                <p>Países LATAM</p>
-                            </div>
-                            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
-                                <h3>98%</h3>
-                                <p>Retención de clientes</p>
-                            </div>
+                            <a href="#contacto" class="btn btn-primary">Solicitar diagnóstico gratuito</a>
+                            <a href="#servicios" class="btn btn-outline">Ver nuestros servicios</a>
                         </div>
                     </div>
                 </div>
@@ -103,25 +90,43 @@
         </div>
     </section>
 
-    <!-- About -->
-    <section class="about" id="nosotros">
-        <div class="container">
-            <div class="section-header text-center" data-aos="fade-up">
-                <span class="section-eyebrow">Sobre Nosotros</span>
-                <h2>Estrategia sin <span>complicaciones</span></h2>
+            <!-- Audience -->
+    <section class="audience" id="nosotros">
+        <div class="container-fluid">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-eyebrow">¿A quién ayudamos?</span>
+                <h2>Dos situaciones, un mismo problema: <span>falta de estructura.</span></h2>
             </div>
 
-            <div class="about-content" data-aos="fade-up" data-aos-delay="100">
-                <p class="about-text">
-                    GR nació con un propósito claro: <strong>democratizar la transformación digital</strong>.
-                    Creemos que la tecnología debe servir al negocio, no complicarlo. Por eso diseñamos
-                    soluciones prácticas, medibles y escalables.
-                </p>
-                <p class="about-text">
-                    Hemos acompañado a más de <strong>100 organizaciones</strong> en Latinoamérica a
-                    profesionalizar su comunicación, automatizar procesos clave y generar ventas
-                    constantes mediante sistemas digitales eficientes.
-                </p>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+        <circle cx="9" cy="7" r="4"/>
+        <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+    </svg>
+                        </div>
+                        <h3>Negocios que ya funcionan</h3>
+                        <p>Tienen clientes y ventas, pero les falta orden, estrategia clara y un sistema digital que los haga crecer de forma predecible.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="audience-card">
+                        <div class="audience-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="2" y1="12" x2="22" y2="12"/>
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+    </svg>
+                        </div>
+                        <h3>Proyectos sin presencia digital</h3>
+                        <p>Tienen visión y producto, pero necesitan construir su base digital desde cero — de forma profesional, no improvisada.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -130,8 +135,15 @@
     <section class="philosophy" id="filosofia">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
-                <span class="section-eyebrow">Metodología</span>
-                <h2>Nuestro proceso de <span>trabajo</span></h2>
+                <span class="section-eyebrow">Cómo trabajamos</span>
+                <h2>Todo lo que necesitás para crecer, <span>integrado en un solo sistema.</span></h2>
+            </div>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="100">
+                <p class="about-text">
+                    No trabajamos por partes. Conectamos cada pieza para que tu negocio <strong>atraiga, convierta y retenga clientes.</strong>
+                    
+                </p>
+
             </div>
 
             <div class="row g-4">
@@ -309,7 +321,7 @@
     <!-- Why Us -->
     <section class="why-us">
         <div class="container">
-            <h2 data-aos="fade-up">¿Por qué trabajar con GR?</h2>
+            <h2 data-aos="fade-up">Lo que nos diferencia:</h2>
 
             <div class="row g-4">
                 <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
@@ -348,14 +360,90 @@
                             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
                         </div>
                         <h4>Experiencia regional</h4>
-                        <p>+100 proyectos en Latinoamérica. Conocemos los mercados locales.</p>
+                        <p>+10 negocios activos en el mercado local. Conocemos el contexto y los desafíos reales.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
+        <!-- Resultados -->
+    <section class="resultados" id="resultados">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-eyebrow">Resultados</span>
+                <h2>Lo que lográs con <span>el sistema.</span></h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="resultado-card">
+                        <div class="resultado-icon plus">+</div>
+                        <p>Más clientes correctos</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="resultado-card">
+                        <div class="resultado-icon plus">+</div>
+                        <p>Más ventas predecibles</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="resultado-card">
+                        <div class="resultado-icon plus">+</div>
+                        <p>Mejor posicionamiento</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="250">
+                    <div class="resultado-card">
+                        <div class="resultado-icon minus">−</div>
+                        <p>Menos caos operativo</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="resultado-card">
+                        <div class="resultado-icon minus">−</div>
+                        <p>Menos dependencia del día a día</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Caso Real -->
+    <section class="caso-real" id="caso-real">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-eyebrow">Caso real</span>
+                <h2>Antes y después del <span>sistema GR.</span></h2>
+            </div>
+
+            <div class="caso-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="row g-0">
+                    <div class="col-md-6 caso-antes">
+                        <span class="caso-label">Antes</span>
+                        <ul>
+                            <li>Comunicación desordenada y sin dirección</li>
+                            <li>Consultas poco claras que no convertían</li>
+                            <li>Sin posicionamiento definido</li>
+                            <li>Servicios confusos para el cliente</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 caso-despues">
+                        <span class="caso-label">Después</span>
+                        <ul>
+                            <li>Mensaje claro y consistente en todos los canales</li>
+                            <li>Servicios definidos con valor percibido</li>
+                            <li>Contenido estratégico que atrae clientes</li>
+                            <li>Canal de ventas optimizado y predecible</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- Contact -->
     <section class="contact" id="contacto">
         <div class="container">
             <div class="section-header text-center" data-aos="fade-up">
@@ -364,31 +452,42 @@
             </div>
 
             <div class="contact-grid">
-                <div class="contact-info" data-aos="fade-right">
-                    <h3>Información de contacto</h3>
-
-                    <div class="contact-item">
-                        <span class="contact-label">Email</span>
-                        <span class="contact-value">
-                            <a href="mailto:hola@grsoluciones.com">hola@grsoluciones.com</a>
-                        </span>
+                <div class="contact-left" data-aos="fade-right">
+                    <!-- Diagnóstico Gratuito -->
+                    <div class="diagnostico-banner" data-aos="fade-up" data-aos-delay="100">
+                        <div class="diagnostico-content">
+                            <h3>Diagnóstico gratuito</h3>
+                            <p class="diagnostico-lead">Antes de trabajar juntos analizamos tu negocio.</p>
+                            <p class="diagnostico-text">Te mostramos qué está fallando, qué estás perdiendo y qué deberías implementar.</p>
+                        </div>
                     </div>
 
-                    <div class="contact-item">
-                        <span class="contact-label">Teléfono</span>
-                        <span class="contact-value">
-                            <a href="https://wa.me/5493515524067" target="_blank" rel="noopener">+54 9 351 552-4067</a>
-                        </span>
-                    </div>
+                    <div class="contact-info">
+                        <h3>Información de contacto</h3>
 
-                    <div class="contact-item">
-                        <span class="contact-label">Ubicación</span>
-                        <span class="contact-value">Córdoba, Argentina<br>Atención remota LATAM</span>
-                    </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">
+                                <a href="mailto:hola@grsoluciones.com">marketingdigital@solucionesdigitales.com</a>
+                            </span>
+                        </div>
 
-                    <div class="contact-item">
-                        <span class="contact-label">Horario</span>
-                        <span class="contact-value">Lunes a Viernes<br>09:00 — 18:00 (ART)</span>
+                        <div class="contact-item">
+                            <span class="contact-label">Teléfono</span>
+                            <span class="contact-value">
+                                <a href="https://wa.me/5493515524067" target="_blank" rel="noopener">+54 9 351 552-4067</a>
+                            </span>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-label">Ubicación</span>
+                            <span class="contact-value">Córdoba, Argentina<br>Atención remota LATAM</span>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-label">Horario</span>
+                            <span class="contact-value">Lunes a Viernes<br>09:00 — 18:00 (ART)</span>
+                        </div>
                     </div>
                 </div>
 

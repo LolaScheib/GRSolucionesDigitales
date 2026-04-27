@@ -8,14 +8,21 @@ AOS.init({
 
 // Navbar scroll effect
 const navbar = document.querySelector('.navbar');
+let ticking = false;
 
 window.addEventListener('scroll', function () {
-    if (!navbar) return;
-
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
+    if (!ticking) {
+        window.requestAnimationFrame(function () {
+            if (navbar) {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            }
+            ticking = false;
+        });
+        ticking = true;
     }
 });
 
@@ -85,6 +92,11 @@ if (contactForm) {
         const email = document.getElementById('email')?.value.trim() || '';
         const servicio = document.getElementById('servicio')?.value || '';
         const mensaje = document.getElementById('mensaje')?.value.trim() || '';
+
+        if (!nombre || !email) {
+            alert('Por favor completá al menos tu nombre y email.');
+            return;
+        }
 
         const texto = `Hola! Vi tu web y quiero más información:
 
