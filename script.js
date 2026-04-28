@@ -98,7 +98,7 @@ if (contactForm) {
             return;
         }
 
-        const texto = `Hola! Vi tu web y quiero más información:
+        const texto = `Hola! Vi su web y me interesa mejorar la presencia digital de mi negocio. ¿Podemos hablar para ver cómo me pueden ayudar?:
 
 • Nombre: ${nombre}
 • Empresa: ${empresa}
