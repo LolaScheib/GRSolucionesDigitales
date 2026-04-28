@@ -85,7 +85,7 @@ img {
 .navbar-brand {
     display: flex;
     align-items: center;
-    gap: 2rem; /* más separación */
+    gap: 2rem;
 }
 
 .navbar-brand img {
@@ -106,7 +106,6 @@ img {
     justify-content: center;
 }
 
-/* TEXTO NUEVO AL LADO DEL LOGO */
 .brand-text {
     font-family: 'Playfair Display', serif;
     font-style: italic;
@@ -118,7 +117,6 @@ img {
     transition: all 0.3s ease;
 }
 
-/* opcional: pequeño efecto hover elegante */
 .brand-text:hover {
     opacity: 0.85;
 }
@@ -254,12 +252,6 @@ img {
     font-weight: 400;
 }
 
-
-
-
-
-
-
 .hero-logo-wrap {
     position: relative;
     z-index: 1;
@@ -286,7 +278,6 @@ img {
 .hero-logo:hover {
     transform: scale(1.04);
 }
-
 
 /* Audience */
 .audience {
@@ -472,8 +463,6 @@ section {
 }
 
 /* About */
-
-
 .about-content {
     max-width: 800px;
     margin: 0 auto;
@@ -679,91 +668,210 @@ section {
     border-radius: 50%;
 }
 
-/* Why Us */
+/* ============================================
+   WHY US - ESTILO CLARO CON TAGS DE COLORES
+   ============================================ */
 .why-us {
-    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #1e40af 100%);
-    color: white;
-    position: relative;
-    overflow: hidden;
-}
-
-.why-us::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0.3;
+    background: var(--bg-secondary);
+    padding: 6rem 0;
 }
 
 .why-us h2 {
-    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
     text-align: center;
-    margin-bottom: 4rem;
-    position: relative;
-    z-index: 1;
+    color: var(--text-primary);
 }
 
 .why-card {
-    text-align: center;
-    padding: 2rem;
-    position: relative;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
     border-radius: 16px;
-    transition: all 0.3s ease;
+    padding: 30px 24px;
     height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .why-card:hover {
-    background: rgba(255, 255, 255, 0.06);
-    transform: translateY(-4px);
-    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border-color: var(--border-light);
 }
 
 .why-icon {
-    width: 64px;
-    height: 64px;
-    margin: 0 auto 1.5rem;
-    background: rgba(59, 130, 246, 0.2);
-    border-radius: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
+    margin-bottom: 16px;
+    background: var(--bg-tertiary);
 }
 
 .why-icon svg {
-    width: 32px;
-    height: 32px;
-    stroke: #60a5fa;
+    width: 24px;
+    height: 24px;
+    stroke: var(--text-muted);
     stroke-width: 1.5;
     fill: none;
 }
 
-.why-card:hover .why-icon {
-    background: rgba(59, 130, 246, 0.3);
-    transform: scale(1.1);
+.why-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-muted);
 }
 
 .why-card h4 {
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    line-height: 1.4;
 }
 
 .why-card p {
-    color: rgba(255, 255, 255, 0.75);
     font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.why-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.tag-purple {
+    background: #ede9fe;
+    color: #7c3aed;
+}
+
+.tag-green {
+    background: #d1fae5;
+    color: #059669;
+}
+
+.tag-orange {
+    background: #ffedd5;
+    color: #ea580c;
+}
+
+.tag-blue {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+/* ============================================
+   RESULTADOS - MÁS LINDO CON ICONOS + Y -
+   ============================================ */
+.resultados {
+    background: var(--bg-primary);
+    padding: 6rem 0;
+}
+
+.resultados .section-header {
+    margin-bottom: 3rem;
+}
+
+.resultado-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: left;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.resultado-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.06);
+    border-color: var(--border-light);
+}
+
+.resultado-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.resultado-icon.plus {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.resultado-icon.minus {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.resultado-card h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.resultado-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
     line-height: 1.6;
     margin: 0;
+}
+
+.col-lg-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+}
+
+@media (max-width: 991.98px) {
+    .col-lg-2-4 {
+        width: 33.333333%;
+    }
+}
+
+@media (max-width: 768px) {
+    .resultados {
+        padding: 4rem 0;
+    }
+
+    .resultado-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .resultado-card h4 {
+        font-size: 0.95rem;
+    }
+
+    .resultado-card p {
+        font-size: 0.82rem;
+    }
+
+    .col-lg-2-4 {
+        width: 50%;
+    }
 }
 
 /* Diagnóstico Banner */
@@ -840,89 +948,6 @@ section {
     gap: 2.5rem;
 }
 
-
-/* Resultados */
-.resultados {
-    background: var(--bg-secondary);
-    padding: 6rem 0;
-}
-
-.resultados .section-header {
-    margin-bottom: 3rem;
-}
-
-.resultado-card {
-    background: #faf8f5;
-    border: 1px solid #edeae6;
-    border-radius: 16px;
-    padding: 2rem 1.5rem;
-    text-align: center;
-    height: 100%;
-    transition: all 0.3s ease;
-}
-
-.resultado-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.06);
-}
-
-.resultado-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1rem;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1;
-}
-
-.resultado-icon.plus {
-    background: var(--gr-blue-soft);
-    color: var(--gr-blue);
-}
-
-.resultado-icon.minus {
-    background: #fee2e2; /* rojo suave de fondo */
-    color: #dc2626;     /* rojo fuerte para el signo */
-}
-
-.resultado-card p {
-    color: var(--text-primary);
-    font-size: 0.9rem;
-    font-weight: 500;
-    line-height: 1.5;
-    margin: 0;
-}
-
-.col-lg-2-4 {
-    flex: 0 0 auto;
-    width: 20%;
-}
-
-@media (max-width: 991.98px) {
-    .col-lg-2-4 {
-        width: 33.333333%;
-    }
-}
-
-@media (max-width: 768px) {
-    .resultados {
-        padding: 4rem 0;
-    }
-
-    .resultado-card {
-        padding: 1.5rem 1rem;
-    }
-
-    .col-lg-2-4 {
-        width: 50%;
-    }
-}
-
 /* Caso Real */
 .caso-real {
     background: var(--bg-secondary);
@@ -961,8 +986,8 @@ section {
 }
 
 .caso-antes .caso-label {
-   background: #fee2e2; /* rojo suave de fondo */
-    color: #dc2626;     /* rojo fuerte para el signo */
+    background: #fee2e2;
+    color: #dc2626;
 }
 
 .caso-despues .caso-label {
@@ -1366,30 +1391,31 @@ footer {
         margin: 0 auto;
         max-height: none;
     }
-.footer-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1.2rem;
-}
 
-.footer-brand img {
-    height: 50px;
-    transform: scale(1.3);
-    transform-origin: center;
-}
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.2rem;
+    }
 
-.footer-copy-wrapper {
-    text-align: center;
-}
+    .footer-brand img {
+        height: 50px;
+        transform: scale(1.3);
+        transform-origin: center;
+    }
 
-.footer-copy {
-    font-size: 0.85rem;
-}
+    .footer-copy-wrapper {
+        text-align: center;
+    }
 
-.footer-meta {
-    font-size: 0.75rem;
-}
+    .footer-copy {
+        font-size: 0.85rem;
+    }
+
+    .footer-meta {
+        font-size: 0.75rem;
+    }
 }
 
 /* FIX IPHONE 14 PRO Y CELULARES */
